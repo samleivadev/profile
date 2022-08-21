@@ -3,6 +3,7 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 body{
     margin: 0 ;
@@ -10,20 +11,20 @@ body{
 }
 .banner {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #0a192f;
     background-size: cover;
     ;
     background-position: center;
-    /* padding-left: 5%; */
-    /* padding-right: 5%;  */
+    padding-left: 5%; 
+    padding-right: 5%;  
     box-sizing: border-box;
     position:relative;
 
 }
 
 .menu {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 35px 0;
     display: flex;
@@ -105,11 +106,12 @@ body{
 
 .changeWords {
     margin-top: 3px;
-   justify-content: center;
+    justify-content: center;
     box-sizing: content-box;
     color: white;
     background-color: #0a192f;
-    height: 50px;
+    max-height: 50px;
+    min-width: 450px;
     padding: 60px 60px;
     display: flex;
     /* box-shadow: 01px 20px 20px rgba(0.2,0,0,0.1); */
@@ -197,14 +199,12 @@ section{
     cursor: pointer;
     color: #232F3E;
 }
-/* #myprojects{
-    background: #0a192f;
-} */
+
 .projects{
     margin-top:3px;
     margin-bottom: 3px;
-    padding: 35px;
-    min-width: 500px;
+    padding: 45px;
+    min-width: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,11 +216,20 @@ section{
 .projects h2{
     font-size: 2em;
     font-weight: 900;
-    color: #64ffda;
+    
 }
 .projects p{
     padding-bottom: 30px;
     text-decoration: none;
+    
+    
+}
+.projectsSubTitle{
+    color: #64ffda;
+}
+
+
+.projectsTitle{
     color: #64ffda;
 }
 .projects .hexagonArea{
@@ -231,6 +240,11 @@ section{
 .projects .hexagonArea.last{
     transform: translateY(-25px);
 }
+.hexagonArea a{
+    color:#0a192f;
+    text-decoration: none;
+}
+
 
 .projects .hexagonArea .hexagon{
     position: relative;
@@ -243,7 +257,8 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    cursor: pointer
+    cursor: pointer;
+    
     
     
 }
@@ -262,6 +277,7 @@ section{
     transition: 0.6s;
     background: #64ffda;
     transform: scale(0.9);
+    
 }
 
 #aboutme{
@@ -269,8 +285,9 @@ section{
     justify-content: center;
     align-items: center;
     /* min-width: 100vh; */
-    min-width: 500px;
-    background: #0a192f;
+    width: 100%;
+    background-color: #0a192f;
+    padding: 45px;
 
 }
 
@@ -318,7 +335,7 @@ section{
 .circlecontent{
     position: absolute;
     inset: 30px;
-    border: 6px solid #fff;
+    border: 6px solid #64ffda;
     z-index: 3;
     border-radius: 50%;
     overflow: hidden;
@@ -348,7 +365,7 @@ section{
     position: relative;
     font-size: 1.5em;
     text-align: center;
-    color: #fff;
+    color: #64ffda;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -365,9 +382,38 @@ section{
 #aboutme .readytohire{
     text-align: center;
     margin-top: 2em;
-    color:#fff
+    color:#64ffda;
 }
 
+.aboutmeBio{
+    display: flex;
+    background: #0a192f;  
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    
+
+}
+
+.aboutTitle{
+    color: #64ffda;
+    min-width: 300px;
+    font-size: 1.5rem;
+    padding:20px;
+}
+
+.aboutText{
+    color: rgba(136,146,176,255);
+    width: 100%;
+    text-justify:auto;
+    margin: 50px;
+}
+.aboutText span{
+    color:#64ffda;
+}
+.aboutText ul{
+    margin: 20px 80px;
+}
 #contact{
     
     display:grid;
