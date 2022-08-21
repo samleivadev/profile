@@ -419,22 +419,24 @@ section{
     display:grid;
     grid-template-columns: repeat(3, 1fr );
     align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    justify-content: space-between;
+    /* margin-top: 40px; */
+    /* margin-bottom: 30px; */
+    background: #0a192f;
+    color: rgba(136,146,176,255)
 
 }
 
 footer{
-    margin-top: 2em;
+    padding-top: 50px;
     margin-bottom: 1em;
     color:rgb(0, 153, 255);
     background: #0a192f;
-    padding: 1em 0;
+    /* padding: 1em 0; */
     text-align: center;
 }
 
 footer .footer_social{
-    color: #ff9900;
+    color: #64ffda;
 }
 
